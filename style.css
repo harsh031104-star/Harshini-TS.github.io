@@ -1,0 +1,142 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Header Section */
+.header {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  text-align: center;
+  padding: 70px 20px;
+  border-bottom: 2px solid #ff4d6d;
+  box-shadow: 0 0 20px #ff4d6d;
+}
+
+.header-text h1 {
+  font-size: 3.2em;
+  color: #ff4d6d;
+  text-shadow: 2px 2px 8px #ff1a4d;
+}
+
+.header-text p {
+  font-size: 1.2em;
+  color: #ffd1dc;
+  margin-top: 10px;
+}
+
+/* Section Base */
+.section {
+  background-color: #1a1a1a;
+  margin: 40px 0;
+  padding: 40px;
+  border-radius: 15px;
+  border-left: 6px solid #ff4d6d;
+  box-shadow: 0 0 25px rgba(255, 77, 109, 0.15);
+}
+
+/* Section Headings */
+.section h2 {
+  color: #ff85a2;
+  font-size: 2em;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #ff4d6d;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.section h3 {
+  color: #ffa3b1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Text Elements */
+p, li {
+  color: #e6e6e6;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+  padding-left: 25px;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-grid div {
+  flex: 1;
+  min-width: 220px;
+  margin-right: 20px;
+}
+
+.skills-grid h3 {
+  color: #ffccd5;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed #ff85a2;
+  padding-bottom: 5px;
+}
+
+/* Social Links */
+.social-links a {
+  text-decoration: none;
+  color: #ff7f9c;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ff4d6d;
+}
+
+/* Footer */
+.footer {
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 25px 10px;
+  color: #ffcccc;
+  font-size: 0.95em;
+  border-top: 2px solid #ff4d6d;
+}
+
+/* Glow Animation (Optional Fancy Effect) */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ff4d6d;
+  }
+  50% {
+    text-shadow: 0 0 20px #ff4d6d;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff4d6d;
+  }
+}
+
+.header-text h1 {
+  animation: glow 2.5s ease-in-out infinite;
+}
